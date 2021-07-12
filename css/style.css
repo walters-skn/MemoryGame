@@ -1,0 +1,49 @@
+html,
+grad1{
+    height: 200px;
+    background-image: linear-gradient(green,coral);
+}
+
+.items-layout {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+
+.item-card {
+    flex: 0 0 0 23%;
+    position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.item-card.flip {
+    transform: rotateY(180deg);
+}
+
+.front-cover, .back-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.front-cover {
+    transform: rotateY(180deg);
+}
+
+header {
+    font-size: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
